@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME FIND NUMBER!</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="top">
+        <h1><button id="playAgain" onclick="playAgain()">PLAY AGAIN</button></h1>
+        <h1>[ENTER FROM 1 ___ 100]</h1>
+    </div>
+    <h1 id="guess">GUESS NUMBER</h1>
+    <div id="random">?</div>
+    <hr>
+    <div class="lr">
+        <div class="left">
+            <input type="number" name="input" id="input">
+            <button id="check" onclick="check()">CHECK!</button>
+        </div>
+        <div class="right">
+        <div id="result">START GUESSING.......</div>
+        <div id="chance">💯CHANCES : <span class="score" id="maximum">100</span></div>
+        <div id="high">🥇🪙HIGHSCORE : <span class="score" id="minimum">0</span></div>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script src="./game.js"></script>
